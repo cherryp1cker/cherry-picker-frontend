@@ -17,9 +17,10 @@ const TabBar = (props) => {
             showLabels
             onChange={() => {}}
         >{
-            LABELS.map((label) => (
+            LABELS.map((label, index) => (
                 <BottomNavigationAction
                     className="tab-bar-item"
+                    key={index}
                     label={label}
                 />
             ))
