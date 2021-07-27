@@ -13,7 +13,7 @@ const Page = (props) => {
     return (
         <AppBar
             className="navigation-bar"
-            position="fixed"
+            position="static"
         >
             <Toolbar className="tool-bar">
                 <div className="logo-wrapper">

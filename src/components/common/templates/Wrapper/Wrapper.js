@@ -9,7 +9,7 @@ import Container from '@material-ui/core/Container';
 const Wrapper = (props) => {
     return (
         <Container
-            maxWidth="lg"
+            // maxWidth="lg"
             className="template-wrapper"
         >
             {props.children}

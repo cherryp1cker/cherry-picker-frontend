@@ -1,9 +1,12 @@
+@import '@/styles/_main.scss';
+
 .tab-bar {
-    height: 70px;
+    height: $tab-bar-height;
     position: sticky;
     bottom: 0;
 }
 
 .tab-bar-item {
     max-width: none;
+    min-width: $tab-bar-item-min-width;
 }

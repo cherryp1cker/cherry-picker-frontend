@@ -1,5 +1,8 @@
+@import '@/styles/_main.scss';
+
 .navigation-bar {
     .tool-bar {
+        height: $navigation-bar-height;
         display: flex;
         justify-content: flex-end;
 

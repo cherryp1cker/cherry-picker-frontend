@@ -1,7 +1,9 @@
+@import '@/styles/_main.scss';
+
 .template-page {
     height: 100vh;
 
     .content-container {
-        height: calc(100% - 70px);
+        height: calc(100% - #{$tab-bar-height});
     }
 }

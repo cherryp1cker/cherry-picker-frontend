@@ -9,6 +9,10 @@ const store = configureStore();
 import '@/styles/_index.scss';
 import App from '@/pages/App';
 
+// Mobile Safari browser's height issue patch
+// https://dev.to/maciejtrzcinski/100vh-problem-with-ios-safari-3ge9
+import '@/utils/mobileResize';
+
 ReactDOM.render(
     <BrowserRouter
         basename={
