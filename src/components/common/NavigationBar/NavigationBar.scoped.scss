@@ -1,0 +1,22 @@
+@import '@/styles/_main.scss';
+
+.navigation-bar {
+    background-color: $background-primary-color;
+
+    .tool-bar {
+        height: $navigation-bar-height;
+        display: flex;
+        justify-content: flex-end;
+
+        .logo-wrapper {
+            margin: 0 auto;
+
+            span {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
