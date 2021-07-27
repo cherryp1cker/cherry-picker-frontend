@@ -1,13 +1,7 @@
 .tab-bar {
     height: 70px;
-    & p {
-        color: green;
-        font-weight: lighter;
-    }
-
-    & h3 {
-        font-weight: lighter;
-    }
+    position: sticky;
+    bottom: 0;
 }
 
 .tab-bar-item {

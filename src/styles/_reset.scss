@@ -1,4 +1,13 @@
-html, body, #root {
+html, body {
     margin: 0px;
     height: 100%;
+}
+
+body {
+    overflow: hidden;
+}
+
+#root {
+    min-height: calc(100% - 70px);
+    min-height: 100%;
 }

@@ -1,0 +1,7 @@
+.template-page {
+    height: 100vh;
+
+    .content-container {
+        height: calc(100% - 70px);
+    }
+}
