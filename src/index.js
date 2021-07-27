@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import configureStore from '@/redux';
 const store = configureStore();
 
-import '@/styles/_reset.scss';
+import '@/styles/_index.scss';
 import App from '@/pages/App';
 
 ReactDOM.render(
