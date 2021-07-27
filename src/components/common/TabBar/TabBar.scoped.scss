@@ -1,0 +1,15 @@
+.tab-bar {
+    height: 70px;
+    & p {
+        color: green;
+        font-weight: lighter;
+    }
+
+    & h3 {
+        font-weight: lighter;
+    }
+}
+
+.tab-bar-item {
+    max-width: none;
+}
