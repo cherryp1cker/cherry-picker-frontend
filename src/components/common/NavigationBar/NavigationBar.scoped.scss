@@ -1,6 +1,8 @@
 @import '@/styles/_main.scss';
 
 .navigation-bar {
+    background-color: $background-primary-color;
+
     .tool-bar {
         height: $navigation-bar-height;
         display: flex;

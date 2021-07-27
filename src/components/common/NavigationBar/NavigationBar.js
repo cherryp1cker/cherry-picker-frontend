@@ -13,7 +13,9 @@ const Page = (props) => {
     return (
         <AppBar
             className="navigation-bar"
+            elevation={0}
             position="static"
+            color="inherit"
         >
             <Toolbar className="tool-bar">
                 <div className="logo-wrapper">

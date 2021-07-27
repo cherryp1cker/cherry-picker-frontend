@@ -4,6 +4,6 @@
     height: 100vh;
 
     .content-container {
-        height: calc(100% - #{$tab-bar-height});
+        height: calc(100% - #{$tab-bar-height} - #{$navigation-bar-height});
     }
 }

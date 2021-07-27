@@ -4,9 +4,10 @@
     height: $tab-bar-height;
     position: sticky;
     bottom: 0;
-}
+    background-color: $background-primary-color;
 
-.tab-bar-item {
-    max-width: none;
-    min-width: $tab-bar-item-min-width;
+    .tab-bar-item {
+        max-width: none;
+        min-width: $tab-bar-item-min-width;
+    }
 }

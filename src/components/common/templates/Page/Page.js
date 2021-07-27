@@ -11,6 +11,7 @@ const Page = (props) => {
     return (
         <Paper
             className="template-page"
+            elevation={0}
             square
         >
             <NavigationBar />

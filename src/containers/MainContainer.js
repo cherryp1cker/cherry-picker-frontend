@@ -4,7 +4,7 @@ import { createSelector } from 'reselect';
 import { Link } from 'react-router-dom';
 
 import SimpleCounter from '@/components/SimpleCounter';
-import Article from '@/components/common/templates/Article';
+import Page from '@/components/common/templates/Page';
 
 import * as appActions from '@/redux/modules/app';
 
@@ -27,9 +27,7 @@ const MainContainer = (props) => {
     );
 
     return (
-        <Article>
-            <h3>Hi, there!!!</h3>
-            <br />
+        <Page>
             <img
                 src="assets/images/pengsu-sleep.jpg"
                 width="350px"
@@ -43,7 +41,7 @@ const MainContainer = (props) => {
             />
             <br />
             <Link to="/about">Want to know about this page?</Link>
-        </Article>
+        </Page>
     );
 }
 
