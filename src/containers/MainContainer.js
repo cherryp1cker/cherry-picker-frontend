@@ -1,9 +1,8 @@
 import React, { useMemo, useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { createSelector } from 'reselect';
-import { Link } from 'react-router-dom';
 
-import SimpleCounter from '@/components/SimpleCounter';
+import NaverMap from '@/components/NaverMap';
 import Page from '@/components/common/templates/Page';
 
 import * as appActions from '@/redux/modules/app';
@@ -28,19 +27,7 @@ const MainContainer = (props) => {
 
     return (
         <Page>
-            <img
-                src="assets/images/pengsu-sleep.jpg"
-                width="350px"
-                height="350px"
-            />
-            <br />
-            <SimpleCounter
-                increment={increment(1)}
-                decrement={decrement(1)}
-                value={counterValue}
-            />
-            <br />
-            <Link to="/about">Want to know about this page?</Link>
+            <NaverMap />
         </Page>
     );
 }
