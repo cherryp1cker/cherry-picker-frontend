@@ -3,18 +3,18 @@ import { Route, Switch } from 'react-router-dom';
 import { hot } from 'react-hot-loader';
 
 import { Home, About, PageNotFound } from '@/pages';
-import Wrapper from '@/components/common/templates/Wrapper';
+import AppWrapper from '@/components/common/templates/AppWrapper';
 
 // catalog for all routings
 const App = (props) => {
     return (
-        <Wrapper>
+        <AppWrapper>
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/about" component={About} />
                 <Route component={PageNotFound} />
             </Switch>
-        </Wrapper>
+        </AppWrapper>
     );
 };
 

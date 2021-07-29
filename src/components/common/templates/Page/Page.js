@@ -3,6 +3,7 @@ import './Page.scoped.scss';
 
 import NavigationBar from '@/components/common/NavigationBar';
 import TabBar from '@/components/common/TabBar';
+import ContentWrapper from '@/components/common/templates/ContentWrapper';
 
 // Material-UI
 import { Paper } from '@material-ui/core';
@@ -15,9 +16,9 @@ const Page = (props) => {
             square
         >
             <NavigationBar />
-            <div className="content-container">
+            <ContentWrapper>
                 {props.children}
-            </div>
+            </ContentWrapper>
             <TabBar />
         </Paper>
     );
