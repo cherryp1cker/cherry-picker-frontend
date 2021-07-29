@@ -2,4 +2,5 @@
 
 .template-content-wrapper {
     height: calc(100% - #{$tab-bar-height} - #{$navigation-bar-height});
+    overflow-y: scroll;
 }
