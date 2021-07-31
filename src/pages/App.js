@@ -2,9 +2,8 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { hot } from 'react-hot-loader';
 
-import { Home, About, PageNotFound } from '@/pages';
+import { Home, About, PageNotFound, SearchResult } from '@/pages';
 import AppWrapper from '@/components/common/templates/AppWrapper';
-import SearchResult from "../components/SearchResult";
 
 // catalog for all routings
 const App = (props) => {
