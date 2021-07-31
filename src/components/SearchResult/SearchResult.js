@@ -9,8 +9,8 @@ function SearchResult() {
     return (
         <div>
 
-            <ResultList />
             <SearchBar />
+            <ResultList />
 
         </div>
     );

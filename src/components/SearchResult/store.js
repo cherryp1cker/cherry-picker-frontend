@@ -18,8 +18,8 @@ class SearchResult {
 
 
 // 내용은 예시로 작성
-const results = [ new SearchResult(0, "도쿄등심", "80,000", "식사 상품권"),
-                    new SearchResult(1, "메드포갈릭", "80,000", "프리미엄패키지 4인 식사권")];
+const results = [ new SearchResult(0, "도쿄등심", 80000, "식사 상품권"),
+                    new SearchResult(1, "메드포갈릭", 80000, "프리미엄패키지 4인 식사권")];
 let cnt = 0;
 
 // return search result list
