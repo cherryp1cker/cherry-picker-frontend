@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import './ResultList.scoped.scss'
+import './ItemList.scoped.scss'
 
-import ResultItem from '@/components/search/ResultItem';
+import ResultItem from '@/components/search/Item';
 import { useSelector } from 'react-redux';
 import * as store from '@/redux/modules/store';
 
 
-const ResultList = (props) => {
+const ItemList = (props) => {
 
     const [resultItemList, setResultItemList] = useState([]);
 
@@ -14,9 +14,9 @@ const ResultList = (props) => {
 
 
     useEffect(() => {
-        const resultList = store.getResults();
-        const resultItemList = [];
-        for (const searchResult of resultList) {
+        const list = store.getResults();
+        const itemList = [];
+        for (const item of list) {
             const resultItem = (<ResultItem key={ searchResult.id } searchResult={ searchResult } />);
             resultItemList.push(resultItem);
         }
@@ -32,4 +32,4 @@ const ResultList = (props) => {
     );
 }
 
-export default ResultList;
+export default ItemList;

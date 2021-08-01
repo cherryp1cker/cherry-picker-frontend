@@ -1,11 +1,11 @@
 import React from 'react';
-import './ResultItem.scoped.scss';
+import './Item.scoped.scss';
 
 import { FaRegHeart } from "react-icons/fa"; // 빈 하트
 import { FaHeart } from "react-icons/fa"; // 찬 하트
 
 
-const ResultItem = ({ searchResult }) => {
+const Item = ({ searchResult }) => {
     return (
         <div>
             <div className="store-name">{searchResult.name}</div>
@@ -17,4 +17,4 @@ const ResultItem = ({ searchResult }) => {
     );
 };
 
-export default ResultItem;
+export default Item;

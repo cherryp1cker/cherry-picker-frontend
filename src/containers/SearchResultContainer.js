@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import queryString from 'query-string';
 
-import ResultList from '@/components/search/ResultList';
-import ResultItem from '@/components/search/ResultItem';
+import ItemList from '@/components/search/ItemList';
+import ResultItem from '@/components/search/Item';
 import { useSelector } from 'react-redux';
 import * as store from '@/redux/modules/store';
 
@@ -16,7 +16,7 @@ const SearchResultContainer = (props) => {
     //     const resultList = store.getResults();
     //     const resultItemList = [];
     //     for (const searchResult of resultList) {
-    //         const resultItem = (<ResultItem key={ searchResult.id } searchResult={ searchResult } />);
+    //         const resultItem = (<Item key={ searchResult.id } searchResult={ searchResult } />);
     //         resultItemList.push(resultItem);
     //     }
     //
