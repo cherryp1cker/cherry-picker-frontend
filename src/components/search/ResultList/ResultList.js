@@ -3,7 +3,7 @@ import './ResultList.scoped.scss'
 
 import ResultItem from '@/components/search/ResultItem';
 import { useSelector } from 'react-redux';
-import * as store from '@/components/search/store';
+import * as store from '@/redux/modules/store';
 
 
 const ResultList = (props) => {
