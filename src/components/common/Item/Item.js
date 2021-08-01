@@ -13,15 +13,16 @@ const Item = ({ item }) => {
     return (
         <div>
             <div className="store-name">{name}</div>
-            <span className="price">{price}</span>
-            <span>원 / </span>
-            <span className="information">{info}</span>
-            <div></div>
+            <div className="price-info">
+                <span className="price">{price}</span>
+                <span>원 / </span>
+                <span className="information">{info}</span>
+            </div>
             <Button onClick={() => dispatch(actions.clickJjim(id))}>
                 { jjim ? (
-                    <FaRegHeart />
+                    <FaRegHeart size = "25px"/>
                 ) : (
-                    <FaHeart />
+                    <FaHeart size = "25px" />
                 )}
             </Button>
         </div>

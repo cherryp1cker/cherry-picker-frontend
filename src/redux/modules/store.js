@@ -62,11 +62,12 @@ const updateItem = (id, name, price, info, jjim) => {
     };
 };
 
-const clickJjim = (id) => {
+const clickJjim = (id, jjim) => {
     return {
         type: CLICK_JJIM,
         payload: {
             id: id,
+            jjim: jjim,
         },
     };
 };
