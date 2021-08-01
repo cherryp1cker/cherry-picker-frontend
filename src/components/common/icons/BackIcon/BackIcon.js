@@ -5,10 +5,6 @@ import SvgIcon from "@material-ui/core/SvgIcon";
 import IconButton from '@material-ui/core/IconButton';
 
 export default function BackIcon(props) {
-    if (!props.isVisible) {
-        return null;
-    }
-
     return (
         <IconButton className="back-icon">
             <SvgIcon

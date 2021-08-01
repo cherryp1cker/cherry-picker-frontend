@@ -23,7 +23,7 @@ const Page = (props) => {
             color="inherit"
         >
             <Toolbar className="tool-bar">
-                <BackIcon isVisible={isBackVisible} />
+                {isBackVisible && <BackIcon />}
                 <div className="logo-wrapper">
                     <span>Logo</span>
                 </div>
