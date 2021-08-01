@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import * as store from '@/components/search/store';
 
 
-function ResultList() {
+const ResultList = (props) => {
 
     const [resultItemList, setResultItemList] = useState([]);
 
