@@ -15,23 +15,23 @@ import BottomNavigation from '@material-ui/core/BottomNavigation';
 const BUTTONS = [
     {
         label: '홈',
-        component: <HomeIcon />,
+        icon: <HomeIcon />,
     },
     {
         label: '검색',
-        component: <SearchIcon />,
+        icon: <SearchIcon />,
     },
     {
         label: '판매하기',
-        component: <BarcodeIcon />,
+        icon: <BarcodeIcon />,
     },
     {
         label: '찜',
-        component: <HeartIcon />,
+        icon: <HeartIcon />,
     },
     {
         label: '프로필',
-        component: <UserIcon />,
+        icon: <UserIcon />,
     },
 ];
 
@@ -45,8 +45,9 @@ const TabBar = (props) => {
             BUTTONS.map((button, index) => (
                 <TabBarButton
                     key={index}
+                    value={index}
                     label={button.label}
-                    component={button.component}
+                    icon={button.icon}
                     isCenter={index === 2}
                 />
             ))
