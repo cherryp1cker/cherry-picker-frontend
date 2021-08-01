@@ -1,6 +1,8 @@
 import React from 'react';
 import './NavigationBar.scoped.scss';
 
+// icons
+import BackIcon from '@/components/common/icons/BackIcon';
 import BellIcon from '@/components/common/icons/BellIcon';
 import GearIcon from '@/components/common/icons/GearIcon';
 
@@ -10,6 +12,9 @@ import Toolbar from '@material-ui/core/Toolbar';
 
 
 const Page = (props) => {
+    // const { isBackVisible } = props;
+    const isBackVisible = true;
+
     return (
         <AppBar
             className="navigation-bar"
@@ -18,6 +23,7 @@ const Page = (props) => {
             color="inherit"
         >
             <Toolbar className="tool-bar">
+                <BackIcon isVisible={isBackVisible} />
                 <div className="logo-wrapper">
                     <span>Logo</span>
                 </div>
