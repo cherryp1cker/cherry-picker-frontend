@@ -1,38 +1,30 @@
 import React, {useEffect, useState} from 'react';
-import queryString from 'query-string';
 
-import ItemList from '@/components/search/ItemList';
-import ResultItem from '@/components/search/Item';
+import ItemList from '@/components/common/lists/ItemList/ItemList';
+import Item from '@/components/common/Item/Item';
 import { useSelector } from 'react-redux';
-import * as store from '@/redux/modules/store';
 
 const SearchResultContainer = (props) => {
 
     const [resultItemList, setResultItemList] = useState([]);
+    const refresh = useSelector((state) => state.reducer.cnt);
+    const list = useSelector((state) => state.reducer.data);
 
-    const refresh = useSelector((store) => store.cnt);
 
-    // useEffect(() => {
-    //     const resultList = store.getResults();
-    //     const resultItemList = [];
-    //     for (const searchResult of resultList) {
-    //         const resultItem = (<Item key={ searchResult.id } searchResult={ searchResult } />);
-    //         resultItemList.push(resultItem);
-    //     }
-    //
-    //     setResultItemList(resultItemList);
-    // }, [refresh])
+    useEffect(() => {
+        const searchItemList = [];
+        for (const searchItem of list) {
+            const item = (<Item key={ searchItem.id } item={ searchItem } />);
+            searchItemList.push(item);
+        }
 
-    //
-
-    // console.log(props.keyword);
-
-    //const keyword = query.keyword === '';
+        setResultItemList(searchItemList);
+    }, [refresh])
 
     return (
-        <>
-            <div>{props.keyword}</div>
-        </>
+        <div>
+            <ItemList list={ resultItemList } />
+        </div>
     );
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import SearchResultContainer from '@/containers/SearchResultContainer';
-import SearchBarContainer from '@/containers/SearchResultContainer';
+import SearchBarContainer from '@/containers/SearchBarContainer';
 import Page from '@/components/common/templates/Page';
 import queryString from 'query-string'
 
