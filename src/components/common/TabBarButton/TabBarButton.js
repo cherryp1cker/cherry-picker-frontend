@@ -27,10 +27,11 @@ const useStyles = makeStyles({
 const TabBarButton = (props) => {
     const { root, label, wrapper } = useStyles();
     const { value, label: labelText, icon, isCenter } = props;
+    const selected = 1;
 
     return (
         <BottomNavigationAction
-            className={`tab-bar-item ${value === 0 ? '--selected' : ''}`}
+            className={`tab-bar-item ${value === selected ? '--selected' : ''}`}
             classes={{
                 root,
                 label,

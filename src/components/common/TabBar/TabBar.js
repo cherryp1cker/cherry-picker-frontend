@@ -39,7 +39,7 @@ const TabBar = (props) => {
     return (
         <BottomNavigation
             className="tab-bar"
-            value={0}
+            value={1}
             onChange={() => {}}
         >{
             BUTTONS.map((button, index) => (
