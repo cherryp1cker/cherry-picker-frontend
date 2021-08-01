@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './ResultList.scoped.scss'
 
-import ResultItem from '@/components/SearchResult/ResultItem';
+import ResultItem from '@/components/search/ResultItem';
 import { useSelector } from 'react-redux';
-import * as store from '@/components/SearchResult/store';
+import * as store from '@/components/search/store';
 
 
 function ResultList() {
