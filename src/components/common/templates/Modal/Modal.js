@@ -23,7 +23,7 @@ const useStyles = makeStyles({
 const Modal = (props) => {
     const {
         paper,
-        paperFullWidth
+        paperFullWidth,
     } = useStyles();
     const { isOpen } = props;
 
@@ -33,7 +33,7 @@ const Modal = (props) => {
             classes={{
                 paper,
                 paperFullWidth,
-                // paperWidthLg
+                // paperWidthLg,
             }}
             maxWidth="sm"
             fullWidth={true}
