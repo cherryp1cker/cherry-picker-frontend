@@ -29,9 +29,7 @@ const MainContainer = (props) => {
     return (
         <Page>
             <NaverMap />
-            <SearchFilterModal isOpen={true}>
-                하하하
-            </SearchFilterModal>
+            <SearchFilterModal isOpen={false} />
         </Page>
     );
 }

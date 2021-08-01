@@ -8,10 +8,12 @@ import MuiDialogActions from '@material-ui/core/DialogActions';
 import Modal from '@/components/common/templates/Modal';
 
 const Page = (props) => {
+    const { isOpen } = props;
+
     return (
         <Modal
             className="search-filter-modal"
-            isOpen={true}
+            isOpen={isOpen}
         >
             <MuiDialogContent>
                 하하하
