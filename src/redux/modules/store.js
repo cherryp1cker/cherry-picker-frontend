@@ -1,5 +1,3 @@
-import { useDispatch } from 'react-redux';
-
 
 // create initial state
 const initialState = {
