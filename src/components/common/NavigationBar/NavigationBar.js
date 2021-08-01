@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavigationBar.scoped.scss';
 
-// icons
+// Other components
 import NavigationBarButton from '@/components/common/NavigationBarButton';
 import BackIcon from '@/components/common/icons/BackIcon';
 import BellIcon from '@/components/common/icons/BellIcon';

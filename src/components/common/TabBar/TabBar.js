@@ -1,9 +1,11 @@
 import React from 'react';
 import './TabBar.scoped.scss';
 
+// Other components
+import TabBarButton from '@/components/common/TabBarButton';
+
 // Material-UI
 import BottomNavigation from '@material-ui/core/BottomNavigation';
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 
 const LABELS = [
     '홈', '검색', '판매하기', '찜', '프로필'
@@ -14,12 +16,10 @@ const TabBar = (props) => {
         <BottomNavigation
             className="tab-bar"
             value={0}
-            showLabels
             onChange={() => {}}
         >{
             LABELS.map((label, index) => (
-                <BottomNavigationAction
-                    className="tab-bar-item"
+                <TabBarButton
                     key={index}
                     label={label}
                 />
