@@ -47,6 +47,7 @@ const TabBar = (props) => {
                     key={index}
                     label={button.label}
                     component={button.component}
+                    isCenter={index === 2}
                 />
             ))
         }</BottomNavigation>
