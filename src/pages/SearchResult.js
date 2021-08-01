@@ -1,13 +1,22 @@
 import React from 'react';
 import SearchResultContainer from '@/containers/SearchResultContainer';
 import SearchBarContainer from '@/containers/SearchResultContainer';
+import Page from '@/components/common/templates/Page';
+import queryString from 'query-string'
 
-const SearchResult = (props) => {
+const SearchResult = ({ location }) => {
+
+    // const query = queryString.parse(location.search);
+    // console.log(query);
+
+    const query = queryString.parse(location.search);
+    // console.log(query.keyword);
+
     return (
-        <>
+        <Page>
             <SearchBarContainer />
-            <SearchResultContainer />
-        </>
+            <SearchResultContainer keyword={query.keyword} />
+        </Page>
     );
 };
 

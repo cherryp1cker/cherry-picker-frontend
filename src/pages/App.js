@@ -12,7 +12,8 @@ const App = (props) => {
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/about" component={About} />
-                <Route exact path="/search-result" component={ SearchResult } />
+                <Route exact path="/search/result" component={SearchResult} />
+                <Route exact path="/search" component={Home} />
                 <Route component={PageNotFound} />
             </Switch>
         </AppWrapper>

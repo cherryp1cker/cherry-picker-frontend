@@ -1,16 +1,39 @@
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
+import React, {useEffect, useState} from 'react';
+import queryString from 'query-string';
 
 import ResultList from '@/components/search/ResultList';
-import Page from '@/components/common/templates/Page';
+import ResultItem from '@/components/search/ResultItem';
+import { useSelector } from 'react-redux';
+import * as store from '@/redux/modules/store';
 
 const SearchResultContainer = (props) => {
+
+    const [resultItemList, setResultItemList] = useState([]);
+
+    const refresh = useSelector((store) => store.cnt);
+
+    // useEffect(() => {
+    //     const resultList = store.getResults();
+    //     const resultItemList = [];
+    //     for (const searchResult of resultList) {
+    //         const resultItem = (<ResultItem key={ searchResult.id } searchResult={ searchResult } />);
+    //         resultItemList.push(resultItem);
+    //     }
+    //
+    //     setResultItemList(resultItemList);
+    // }, [refresh])
+
+    //
+
+    // console.log(props.keyword);
+
+    //const keyword = query.keyword === '';
+
     return (
-        <Page>
-            <ResultList />
-        </Page>
+        <>
+            <div>{props.keyword}</div>
+        </>
     );
-};
+}
 
 export default SearchResultContainer;

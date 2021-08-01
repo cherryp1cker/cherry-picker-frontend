@@ -53,6 +53,7 @@
         "webpack-manifest-plugin": "^3.1.1"
     },
     "dependencies": {
+        "query-string": "^7.0.1",
         "react-icons": "^4.2.0"
     }
 }

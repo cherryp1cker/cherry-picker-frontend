@@ -3,7 +3,11 @@ import './SearchBar.scoped.scss';
 
 function SearchBar() {
     return (
-        <input type="button" className="search-bar">
+        <input
+            className="search-bar"
+            placeholder="검색"
+            type="button"
+            >
 
         </input>
     );
