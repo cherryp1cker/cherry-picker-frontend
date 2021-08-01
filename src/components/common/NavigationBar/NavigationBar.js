@@ -2,6 +2,7 @@ import React from 'react';
 import './NavigationBar.scoped.scss';
 
 // icons
+import NavigationBarButton from '@/components/common/NavigationBarButton';
 import BackIcon from '@/components/common/icons/BackIcon';
 import BellIcon from '@/components/common/icons/BellIcon';
 import GearIcon from '@/components/common/icons/GearIcon';
@@ -23,12 +24,12 @@ const Page = (props) => {
             color="inherit"
         >
             <Toolbar className="tool-bar">
-                {isBackVisible && <BackIcon />}
+                {isBackVisible && <NavigationBarButton component={<BackIcon />} />}
                 <div className="logo-wrapper">
                     <span>Logo</span>
                 </div>
-                <BellIcon />
-                <GearIcon />
+                <NavigationBarButton component={<BellIcon />} />
+                <NavigationBarButton component={<GearIcon />} />
             </Toolbar>
         </AppBar>
     );
