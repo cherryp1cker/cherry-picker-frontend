@@ -1,0 +1,21 @@
+@import '@/styles/_main.scss';
+
+.tab-bar-item {
+    max-width: none;
+    min-width: $tab-bar-item-min-width;
+
+    &.--selected::before {
+        content: '\2800';
+        display: inline-block;
+        position: absolute;
+        top: 6px;
+        width: 4px;
+        height: 4px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        background-color: #074EE8;
+    }
+}
