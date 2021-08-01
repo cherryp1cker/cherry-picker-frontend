@@ -2,8 +2,9 @@ import React, { useMemo, useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { createSelector } from 'reselect';
 
-import NaverMap from '@/components/NaverMap';
 import Page from '@/components/common/templates/Page';
+import NaverMap from '@/components/NaverMap';
+import SearchFilterModal from '@/components/search/SearchFilterModal';
 
 import * as appActions from '@/redux/modules/app';
 
@@ -28,6 +29,7 @@ const MainContainer = (props) => {
     return (
         <Page>
             <NaverMap />
+            <SearchFilterModal isOpen={false} />
         </Page>
     );
 }

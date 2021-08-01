@@ -6,7 +6,7 @@ import TabBar from '@/components/common/TabBar';
 import ContentWrapper from '@/components/common/templates/ContentWrapper';
 
 // Material-UI
-import { Paper } from '@material-ui/core';
+import Paper from '@material-ui/core/Paper';
 
 const Page = (props) => {
     return (
