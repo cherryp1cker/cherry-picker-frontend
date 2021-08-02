@@ -1,17 +1,25 @@
 
+.search-bar-box {
+
+}
 
 .search-bar {
 
-  position: static;
-
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: calc(100% - 40px);
   height: 42px;
+  justify-content: center;
+  align-items: center;
 
+  width: 500px;
+  margin: 0px auto;
   background: #FFF0F0;
   border-radius: 19.9607px;
+  border: 0;
 
 }
+
+// type="text"일 경우 placeholder="검색"
+//input::placeholder {
+//  color: black;
+//  padding-left: 20px;
+//}

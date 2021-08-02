@@ -4,10 +4,10 @@ import {makeStyles} from "@material-ui/core/styles";
 
 function SearchBar() {
     return (
-        <div className="InputBox">
+        <div className="search-bar-box">
             <input
                 className="search-bar"
-                placeholder="검색"
+                value="검색"
                 type="button"
                 >
             </input>
