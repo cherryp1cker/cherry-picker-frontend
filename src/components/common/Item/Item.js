@@ -18,11 +18,11 @@ const Item = ({ item }) => {
                 <span>원 / </span>
                 <span className="information">{info}</span>
             </div>
-            <Button onClick={() => dispatch(actions.clickJjim(id))}>
+            <Button onClick={() => dispatch(actions.clickJjim(id, jjim))}>
                 { jjim ? (
-                    <FaRegHeart size = "25px"/>
+                    <FaHeart size = "25px"/>
                 ) : (
-                    <FaHeart size = "25px" />
+                    <FaRegHeart size = "25px" />
                 )}
             </Button>
         </div>

@@ -17,6 +17,13 @@ const initialState = {
             info: "프리미엄패키지 4인 식사권",
             jjim: false,
         },
+        {
+            id: 2,
+            name: "서울 파르나스 호텔",
+            price: 200000,
+            info: "디너 식사권 2매",
+            jjim: false,
+        },
     ],
 };
 
@@ -123,7 +130,7 @@ export const reducer = (state = initialState, {type, payload}) => {
             const newState = {
                 ...state,
                 data: state.data.map((data) =>
-                data.id === payload.id ? { ...data, jjim: !jjim } : data
+                data.id === payload.id ? { ...data, jjim: !payload.jjim } : data
                 ),
             };
             return newState;
