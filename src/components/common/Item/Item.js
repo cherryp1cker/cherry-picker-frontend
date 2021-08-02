@@ -14,7 +14,7 @@ const Item = ({ item }) => {
     const dispatch = useDispatch();
     return (
         <div className="total-item-box">
-            <FaSquareFull size="90px" color="skyblue"/>
+            <FaSquareFull size="90px" color="D2DFFB"/>
             <div className="updown"></div>
             <div className="item-box">
                 <div className="store-name">{name}</div>
