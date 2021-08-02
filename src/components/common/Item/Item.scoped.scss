@@ -1,4 +1,28 @@
 
+
+.total-item-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.updown {
+  border: 1px solid black;
+  width: 0.1px;
+  height: 100px;
+  margin: 10px;
+}
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
 .store-name {
   font-family: Roboto;
   font-size: 20px;
