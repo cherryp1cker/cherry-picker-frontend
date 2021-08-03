@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './ItemList.scoped.scss'
-
-import Item from '@/components/common/Item/Item';
 
 
 const ItemList = (props) => {
