@@ -1,0 +1,50 @@
+
+
+.total-item-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding-top: 20px;
+  margin-left: 160px;
+  margin-right: 160px;
+}
+
+.updown {
+  border: 1px solid black;
+  width: 0.1px;
+  height: 100px;
+  margin: 10px;
+}
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.store-name {
+  font-family: Roboto;
+  font-size: 20px;
+}
+
+.price-info {
+  font-family: Roboto;
+  font-size: 20px;
+}
+
+.price {
+
+}
+
+.information {
+
+}
+
+.jjims {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+}
