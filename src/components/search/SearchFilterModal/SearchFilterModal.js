@@ -29,11 +29,13 @@ const Page = (props) => {
                 >
                     <RadioButton
                         value="location"
-                        label="위치로 찾기"
+                        labelText="위치로 찾기"
+                        labelColor="#485F57"
                     />
                     <RadioButton
                         value="info"
-                        label="정보로 찾기"
+                        labelText="정보로 찾기"
+                        labelColor="#485F57"
                     />
                 </RadioButtonGroup>
                 <div className="filter-modal-divider">
