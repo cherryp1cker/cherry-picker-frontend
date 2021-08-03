@@ -4,7 +4,9 @@ import { createSelector } from 'reselect';
 
 import Page from '@/components/common/templates/Page';
 import NaverMap from '@/components/NaverMap';
-import SearchFilterModal from '@/components/search/SearchFilterModal';
+
+// containers
+import SearchFilterModalContainer from '@/containers/search/SearchFilterModalContainer';
 
 import * as appActions from '@/redux/modules/app';
 
@@ -29,7 +31,7 @@ const MainContainer = (props) => {
     return (
         <Page>
             <NaverMap />
-            <SearchFilterModal isOpen={true} />
+            <SearchFilterModalContainer isOpen={true} />
         </Page>
     );
 }
