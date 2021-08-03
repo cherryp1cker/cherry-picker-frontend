@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 
-import ItemList from '@/components/common/lists/ItemList/ItemList';
-import Item from '@/components/common/Item/Item';
+import ItemList from '@/components/common/lists/ItemList';
+import Item from '@/components/common/Item';
 import { useSelector } from 'react-redux';
 
 const SearchResultContainer = (props) => {

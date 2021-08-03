@@ -1,15 +1,11 @@
 @import '@/styles/_main.scss';
 
-.search-filter-modal {
-}
-
-.filter-modal-divider {
+.modal-divider {
     display: flex;
     justify-content: center;
     margin: 20px 0 10px;
 
     & > span {
-        color: $search-filter-modal-select-color;
         font-size: 18px;
         font-weight: 600;
     }

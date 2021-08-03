@@ -6,7 +6,7 @@ import FormControl from '@material-ui/core/FormControl';
 import RadioGroup from '@material-ui/core/RadioGroup';
 
 const RadioButtonGroup = (props) => {
-    const { onClickButton } = props;
+    const { onClickButton, defaultValue } = props;
 
     return (
         <FormControl
@@ -16,6 +16,7 @@ const RadioButtonGroup = (props) => {
                 className="template-radio-button-group"
                 row
                 onChange={(e) => { onClickButton(e); }}
+                defaultValue={defaultValue}
             >
                 {props.children}
             </RadioGroup>
