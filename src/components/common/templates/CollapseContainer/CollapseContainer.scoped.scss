@@ -1,5 +1,33 @@
 @import '@/styles/_main.scss';
 
 .template-collapse-container {
+    margin: 10px 0;
+}
 
+.collapse-header {
+    display: flex;
+    justify-content: space-between;
+    & > span {
+        font-size: 18px;
+        font-weight: 600;
+        color: $search-filter-modal-focus-color;
+    }
+
+    & > div {
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid $search-filter-modal-focus-color;
+        border-left: 2px solid $search-filter-modal-focus-color;
+
+        &.--close {
+            transform: rotate(45deg);
+        }
+
+        &.--open {
+            transform: rotate(-135deg);
+        }
+    }
+}
+
+.collapse-inner-content-wrapper {
 }

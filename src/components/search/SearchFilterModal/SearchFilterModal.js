@@ -37,14 +37,16 @@ const Page = (props) => {
                     />
                 </RadioButtonGroup>
                 <div className="filter-modal-divider">
-                    FILTER
+                    <span>FILTER</span>
                 </div>
                 <FullContainer>
                     {MENU_TYPE.map((type, index) => (
                         <button key={index}>{type}</button>
                     ))}
                 </FullContainer>
-                <CollapseContainer>
+                <CollapseContainer
+                    headerText="음식 종류"
+                >
                     {MENU_TYPE.map((type, index) => (
                         <button key={index}>{type}</button>
                     ))}

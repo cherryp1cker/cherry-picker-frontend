@@ -9,16 +9,17 @@ const RadioButtonGroup = (props) => {
     const { onClickButton } = props;
 
     return (
-        <div className="template-collapse-container">
-            <FormControl>
-                <RadioGroup
-                    row
-                    onChange={(e) => { onClickButton(e); }}
-                >
-                    {props.children}
-                </RadioGroup>
-            </FormControl>
-        </div>
+        <FormControl
+            fullWidth
+        >
+            <RadioGroup
+                className="template-radio-button-group"
+                row
+                onChange={(e) => { onClickButton(e); }}
+            >
+                {props.children}
+            </RadioGroup>
+        </FormControl>
     );
 };
 

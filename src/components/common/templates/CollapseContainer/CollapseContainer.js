@@ -7,6 +7,8 @@ import ListItem from '@material-ui/core/ListItem';
 import Collapse from '@material-ui/core/Collapse';
 
 const CollapseContainer = (props) => {
+    const { headerText } = props;
+
     const [isOpen, toggle] = useState(false);
     const toggleCollapse = () => {
         toggle(!isOpen);
@@ -14,15 +16,24 @@ const CollapseContainer = (props) => {
 
     return (
         <div className="template-collapse-container">
-            <ListItem button onClick={toggleCollapse}>
-                {isOpen ? <span>닫기</span> : <span>열기</span>}
+            <ListItem
+                className="collapse-header"
+                disableGutters
+                button
+                onClick={toggleCollapse}
+            >
+                <span>{headerText}</span>
+                <div
+                    className={`${(isOpen ? '--close' : '--open')}`}
+                />
             </ListItem>
             <Collapse in={isOpen} timeout="auto" unmountOnExit>
-                <List component="div" disablePadding>
-                    <ListItem button>
-                        {props.children}
-                    </ListItem>
-                </List>
+                <ListItem
+                    className="collapse-inner-content-wrapper"
+                    disableGutters
+                >
+                    {props.children}
+                </ListItem>
             </Collapse>
         </div>
     );
