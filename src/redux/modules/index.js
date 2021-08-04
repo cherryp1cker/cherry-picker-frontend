@@ -2,7 +2,8 @@
 // using Ducks pattern for each slices
 import { combineReducers } from 'redux';
 import app from './app';
+import reducer from './search'
 
 export default combineReducers({
-  app,
+  app, reducer,
 });

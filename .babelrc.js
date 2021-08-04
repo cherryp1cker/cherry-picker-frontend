@@ -5,5 +5,6 @@ module.exports = {
         "@babel/plugin-syntax-dynamic-import",
         "@babel/proposal-class-properties",
         "react-hot-loader/babel",
+        "babel-plugin-react-scoped-css",
     ],
 };

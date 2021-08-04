@@ -5,9 +5,9 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "MODE=development npx webpack serve --config ./config/webpack.config.js --open",
-        "build": "MODE=production npx webpack --config ./config/webpack.config.js",
-        "build:github": "MODE=github npx webpack --config ./config/webpack.config.github.js",
+        "dev": "cross-env MODE=development npx webpack serve --config ./config/webpack.config.js --open",
+        "build": "cross-env MODE=production npx webpack --config ./config/webpack.config.js",
+        "build:github": "cross-env MODE=github npx webpack --config ./config/webpack.config.github.js",
         "storybook": "start-storybook"
     },
     "author": "cadenzah",
@@ -19,11 +19,14 @@
         "@babel/plugin-syntax-dynamic-import": "^7.2.0",
         "@babel/preset-env": "^7.5.5",
         "@babel/preset-react": "^7.0.0",
+        "@material-ui/core": "^4.12.2",
         "@reduxjs/toolkit": "^1.6.1",
         "babel-loader": "^8.2.2",
+        "babel-plugin-react-scoped-css": "^1.1.1",
         "clean-webpack-plugin": "^3.0.0",
         "copy-webpack-plugin": "^6.1.1",
         "core-js": "^3.15.2",
+        "cross-env": "^7.0.3",
         "css-loader": "^6.2.0",
         "dotenv": "^10.0.0",
         "html-webpack-plugin": "^5.3.2",
@@ -32,6 +35,7 @@
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-hot-loader": "^4.13.0",
+        "react-naver-maps": "^0.0.13",
         "react-redux": "^7.2.4",
         "react-router-dom": "^5.2.0",
         "redux": "^4.1.0",
@@ -40,11 +44,16 @@
         "regenerator-runtime": "^0.13.7",
         "reselect": "^4.0.0",
         "sass-loader": "^12.1.0",
+        "scoped-css-loader": "^1.0.0",
         "style-loader": "^3.1.0",
         "url-loader": "^2.2.0",
         "webpack": "^5.45.1",
         "webpack-cli": "^4.7.2",
         "webpack-dev-server": "^4.0.0-rc.0",
         "webpack-manifest-plugin": "^3.1.1"
+    },
+    "dependencies": {
+        "query-string": "^7.0.1",
+        "react-icons": "^4.2.0"
     }
 }

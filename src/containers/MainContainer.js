@@ -1,10 +1,13 @@
 import React, { useMemo, useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { createSelector } from 'reselect';
-import { Link } from 'react-router-dom';
 
-import SimpleCounter from '@/components/SimpleCounter';
-import Article from '@/components/common/templates/Article';
+import Page from '@/components/common/templates/Page';
+import NaverMap from '@/components/NaverMap';
+
+// containers
+import SearchBarContainer from '@/containers/search/SearchBarContainer';
+import SearchFilterModalContainer from '@/containers/search/SearchFilterModalContainer';
 
 import * as appActions from '@/redux/modules/app';
 
@@ -27,23 +30,11 @@ const MainContainer = (props) => {
     );
 
     return (
-        <Article>
-            <h3>Hi, there!!!</h3>
-            <br />
-            <img
-                src="assets/images/pengsu-sleep.jpg"
-                width="350px"
-                height="350px"
-            />
-            <br />
-            <SimpleCounter
-                increment={increment(1)}
-                decrement={decrement(1)}
-                value={counterValue}
-            />
-            <br />
-            <Link to="/about">Want to know about this page?</Link>
-        </Article>
+        <Page>
+            <NaverMap />
+            <SearchFilterModalContainer isOpen={true} />
+            <SearchBarContainer position="absolute" top="110px" />
+        </Page>
     );
 }
 

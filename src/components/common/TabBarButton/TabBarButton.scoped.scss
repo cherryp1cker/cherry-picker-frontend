@@ -1,0 +1,33 @@
+@import '@/styles/_main.scss';
+
+.tab-bar-item {
+    max-width: none;
+    min-width: $tab-bar-item-min-width;
+    padding-top: 10px;
+    
+    &.--center::before {
+        content: '\2800';
+        display: inline-block;
+        position: absolute;
+        z-index: -1;
+        width: $tab-bar-center-button-background;
+        height: $tab-bar-center-button-background;
+        border-radius: calc(#{$tab-bar-center-button-background} / 2);
+        background-color: #C8D8FA;
+    }
+
+    &.--selected::before {
+        content: '\2800';
+        display: inline-block;
+        position: absolute;
+        top: 7px;
+        width: 4px;
+        height: 4px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        background-color: #074EE8;
+    }
+}

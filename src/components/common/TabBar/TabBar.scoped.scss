@@ -1,0 +1,8 @@
+@import '@/styles/_main.scss';
+
+.tab-bar {
+    height: $tab-bar-height;
+    position: sticky;
+    bottom: 0;
+    background-color: $background-primary-color;
+}

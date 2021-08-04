@@ -1,0 +1,5 @@
+@import '@/styles/_main.scss';
+
+.template-modal {
+    z-index: 20 !important; // 검색 바보다 낮도록
+}
