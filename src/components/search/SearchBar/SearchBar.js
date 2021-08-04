@@ -6,6 +6,7 @@ function SearchBar(props) {
 
     const selectedStyle = {
         top: position === 'absolute' ? top : undefined,
+        left: position === 'absolute' ? '0px' : undefined,
         marginTop: position !== 'absolute' ? top : undefined,
     }
 

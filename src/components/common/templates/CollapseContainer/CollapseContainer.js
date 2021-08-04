@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './CollapseContainer.scoped.scss';
 
 // Material-UI
-import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Collapse from '@material-ui/core/Collapse';
 
