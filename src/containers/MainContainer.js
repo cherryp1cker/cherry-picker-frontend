@@ -6,6 +6,7 @@ import Page from '@/components/common/templates/Page';
 import NaverMap from '@/components/NaverMap';
 
 // containers
+import SearchBarContainer from '@/containers/search/SearchBarContainer';
 import SearchFilterModalContainer from '@/containers/search/SearchFilterModalContainer';
 
 import * as appActions from '@/redux/modules/app';
@@ -32,6 +33,7 @@ const MainContainer = (props) => {
         <Page>
             <NaverMap />
             <SearchFilterModalContainer isOpen={true} />
+            <SearchBarContainer position="absolute" top="110px" />
         </Page>
     );
 }

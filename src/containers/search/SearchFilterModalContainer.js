@@ -29,6 +29,7 @@ const SearchFilterModalContainer = (props) => {
         <Modal
             className="search-filter-modal"
             isOpen={isOpen}
+            top="190px"
         >
             <MuiDialogContent>
                 <RadioButtonGroup
