@@ -1,0 +1,31 @@
+.seek-bar{
+  margin: 50px auto;
+  position: relative;
+  width: calc(100% - 100px);
+  height: 10px;
+  background: #F4EEE7;
+  border-radius: 5px;
+}
+
+.circle {
+  cursor: grab;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+}
+
+.number {
+  position: absolute;
+  display: block;
+  width: 30px;
+  line-height: 30px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background: #BE7A6D;
+  border-radius: 100%;
+  text-align: center;
+}

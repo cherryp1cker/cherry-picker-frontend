@@ -2,6 +2,7 @@ import React from 'react';
 
 // Other Components
 import CollapseContainer from '@/components/common/templates/CollapseContainer';
+import SeekBar from '@/components/common/SeekBar'
 
 const MENU_TYPE = ['양식', '한식', '일식', '중식', '퓨전', '기타'];
 
@@ -19,9 +20,7 @@ const SearchByInfoContainer = (props) => {
                 ))}
             </CollapseContainer>
             <CollapseContainer headerText="가격대">
-                {MENU_TYPE.map((type, index) => (
-                    <button key={index}>{type}</button>
-                ))}
+                <SeekBar />
             </CollapseContainer>
         </>
     );
