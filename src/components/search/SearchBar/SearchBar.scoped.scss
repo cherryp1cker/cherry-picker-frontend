@@ -1,22 +1,20 @@
 
 .search-bar-box {
+    display: flex;
+    justify-content: center;
+    z-index: 50;
+    width: 100%;
 
-}
-
-.search-bar {
-
-  display: flex;
-  height: 45px;
-  justify-content: center;
-  align-items: center;
-
-  width: calc(100% - 40px);
-  max-width: 500px;
-  margin: 30px auto 0px;
-  background: #FFF0F0;
-  border-radius: 19.9607px;
-  border: 0;
-
+    .search-bar {
+        height: 45px;
+        align-items: center;
+        width: calc(100% - 40px);
+        max-width: 600px;
+        // margin: 30px auto 0px;
+        background: #FFF0F0;
+        border-radius: 19.9607px;
+        border: 0;
+    }
 }
 
 // type="text"일 경우 placeholder="검색"

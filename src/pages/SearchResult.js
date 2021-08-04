@@ -11,7 +11,7 @@ const SearchResult = ({ location }) => {
 
     return (
         <Page>
-            <SearchBarContainer />
+            <SearchBarContainer top="30px" />
             <SearchResultContainer keyword={query.keyword} />
         </Page>
     );

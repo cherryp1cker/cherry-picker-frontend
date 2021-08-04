@@ -36,9 +36,10 @@ const Modal = (props) => {
                 // paperWidthLg,
             }}
             maxWidth="sm"
-            fullWidth={true}
-            hideBackdrop={true}
             open={isOpen}
+            fullWidth
+            hideBackdrop
+            disableEnforceFocus
         >
             {props.children}
         </Dialog>
