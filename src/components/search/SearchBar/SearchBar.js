@@ -1,6 +1,5 @@
 import React from 'react';
 import './SearchBar.scoped.scss';
-import {makeStyles} from "@material-ui/core/styles";
 
 function SearchBar() {
     return (

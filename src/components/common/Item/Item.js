@@ -3,8 +3,8 @@ import './Item.scoped.scss';
 
 import { FaRegHeart } from "react-icons/fa"; // 빈 하트
 import { FaHeart } from "react-icons/fa"; // 찬 하트
-import { useSelector, useDispatch } from 'react-redux';
-import { actions } from '@/redux/modules/store';
+import { useDispatch } from 'react-redux';
+import { actions } from '@/redux/modules/search';
 import { Button } from "@material-ui/core";
 import { FaSquareFull } from "react-icons/fa"; // 찬 네모
 
@@ -25,9 +25,9 @@ const Item = ({ item }) => {
                 </div>
                 <Button className="jjims" onClick={() => dispatch(actions.clickJjim(id, jjim))}>
                     { jjim ? (
-                        <FaHeart size = "25px"/>
+                        <FaHeart size = "20px"/>
                     ) : (
-                        <FaRegHeart size = "25px" />
+                        <FaRegHeart size = "20px" />
                     )}
                 </Button>
             </div>
