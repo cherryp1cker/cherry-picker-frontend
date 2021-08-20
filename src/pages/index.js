@@ -4,5 +4,5 @@ import withSplitting from '@/utils/withSplitting';
 export const Home = withSplitting(() => import('./Home'));
 export const About = withSplitting(() => import('./About'));
 export const SearchResult = withSplitting(() => import('./SearchResult'));
+export const Product = withSplitting(() => import('./Product'));
 export const PageNotFound = withSplitting(() => import('./common/PageNotFound'));
-
